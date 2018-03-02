@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.auth0.com/js/auth0/9.3.1/auth0.min.js"></script>
+  <script type="text/javascript">
+    var auth0 = new auth0.WebAuth({
+         domain: 'havenlife-email.auth0.com',
+         redirectUri: 'https://localhost:3000',
+        clientID: 'K3iuAKJbe9hbpDUz6G6v0fg76BDTd9UW',
+        responseType: 'token',
+        audience: 'urn:havenlife:api',
+        leeway: 30
+    });
+    auth0.crossOriginVerification();
+  </script>
+</head>
+
+<body></body>
+
+</html>
